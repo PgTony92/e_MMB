@@ -6,3 +6,4 @@
 - MMB.prototype.getMoneyCtrl
 ### 以及1个静态方法(无须实例化,直接使用构造函数即可调用)
 - MMB.getUrlParam 
+### 组长林泽涛为组员初步划分了任务,详见根目录下的图片

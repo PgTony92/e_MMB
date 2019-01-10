@@ -47,5 +47,30 @@
         })
     }
 
+    /**
+      * 用来获分类标题
+      * @param {*} 无
+      * @returns JSON格式
+      */
+     MMB.prototype.getCategoryTitle = function () {
+        return axios(`${MMB.domain}/api/getcategorytitle`).then(res => {
+            return res.data;
+            console.log(res);
+        })
+    }
+
+
+    /**
+      * 用来获分类标题列表
+      * @param {*} 无
+      * @returns JSON格式
+      */
+     MMB.prototype.getCategory = function (id) {
+        return axios(`${MMB.domain}/api/getcategory?titleid=${id}`).then(res => {
+            return res.data;
+            console.log(res);
+        })
+    }
+
     w.MMB = MMB;
 })(window);
